@@ -73,7 +73,11 @@ export default class GameMgr extends cc.Component
         // ===================== TODO =====================
         // 1. Enable physics manager 
         // 2. Set physics gravity to (0, -200)
-
+	
+        cc.director.getPhysicsManager().enabled = true;
+        cc.director.getPhysicsManager().gravity = cc.v2 (0, -200);
+            
+            
         // ================================================
 
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);

@@ -1,0 +1,134 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "player.plist",
+  "_objFlags": 0,
+  "_native": "",
+  "_spriteFrames": {
+    "player_0": {
+      "__uuid__": "6bed5a56-0556-4e9d-904f-b5b8e38ee4d9"
+    },
+    "player_1": {
+      "__uuid__": "b95dc1fd-396a-4224-8658-23378f242f35"
+    },
+    "player_10": {
+      "__uuid__": "d1209d48-9a85-46cd-a96a-569b49678997"
+    },
+    "player_11": {
+      "__uuid__": "4518847f-19c0-46c7-bca1-cb75d6a5697f"
+    },
+    "player_12": {
+      "__uuid__": "aae4f93c-fd5e-4a23-99dc-06df2d98e6d8"
+    },
+    "player_13": {
+      "__uuid__": "ab17809f-a849-4071-89a9-dc19c309a347"
+    },
+    "player_14": {
+      "__uuid__": "f9b9bef8-2905-40cd-90f6-479382d7bec6"
+    },
+    "player_15": {
+      "__uuid__": "db62d905-e82d-4275-b691-8cb482f264d3"
+    },
+    "player_16": {
+      "__uuid__": "0e5f5b1d-f298-4858-be3b-6baa65775aa8"
+    },
+    "player_17": {
+      "__uuid__": "8c2a4c5d-8c35-4088-a217-99d932634d08"
+    },
+    "player_18": {
+      "__uuid__": "693ff286-0afb-41b7-a8a7-2a16819311c6"
+    },
+    "player_19": {
+      "__uuid__": "07106201-7709-4287-b025-0edb5bb287fa"
+    },
+    "player_2": {
+      "__uuid__": "ca927e31-eb70-4d71-bd78-90cab68a6678"
+    },
+    "player_20": {
+      "__uuid__": "d6b2a246-e111-46bf-9ee3-beba2c3be276"
+    },
+    "player_21": {
+      "__uuid__": "56075c16-b0f0-464d-ac95-28fa98a5eafe"
+    },
+    "player_22": {
+      "__uuid__": "6cafbe0a-8b9c-4288-a5b4-ff22ca1bc71d"
+    },
+    "player_23": {
+      "__uuid__": "76f08346-21a9-4d8e-b798-635387d1f0b8"
+    },
+    "player_24": {
+      "__uuid__": "528e0930-ab2e-430e-8cd4-86e92c122740"
+    },
+    "player_25": {
+      "__uuid__": "7eb764e6-0116-4aa7-adf9-fd98cdf809c9"
+    },
+    "player_26": {
+      "__uuid__": "57767a70-0940-4a1d-adcd-f9f4442a9636"
+    },
+    "player_27": {
+      "__uuid__": "79dce86a-5cf7-4d62-9f97-4e97310535e0"
+    },
+    "player_28": {
+      "__uuid__": "ddcdb0af-5280-444c-a059-602b7d405094"
+    },
+    "player_29": {
+      "__uuid__": "20520cbb-e08d-42dd-b31a-3a437a3f5180"
+    },
+    "player_3": {
+      "__uuid__": "dec43de0-6974-408f-9329-a6b280a7692a"
+    },
+    "player_30": {
+      "__uuid__": "e26fdd22-2267-432f-9814-f6884502b7f2"
+    },
+    "player_31": {
+      "__uuid__": "e46d8a45-000d-4243-b966-6b4953cfcff6"
+    },
+    "player_32": {
+      "__uuid__": "a870203b-5e5d-4a84-a2c5-f57fffe2f074"
+    },
+    "player_33": {
+      "__uuid__": "ebc3eff2-601f-4f4d-96dc-ba73d095fd41"
+    },
+    "player_34": {
+      "__uuid__": "56dec2f3-ef57-4555-9dd6-59255b35a53c"
+    },
+    "player_35": {
+      "__uuid__": "eba41cf5-b6fd-412d-b65f-3c4aaa230853"
+    },
+    "player_36": {
+      "__uuid__": "c74f9f6a-d677-403f-ae68-871545c82b6e"
+    },
+    "player_37": {
+      "__uuid__": "7287d4a9-f0ab-47af-a12f-9c6f67f19e00"
+    },
+    "player_38": {
+      "__uuid__": "2b951071-67bf-422c-ae62-a2627dfe9561"
+    },
+    "player_39": {
+      "__uuid__": "60e22498-ec05-4cf5-b22c-e2ff2d975079"
+    },
+    "player_4": {
+      "__uuid__": "7a223b4f-d6de-4292-9bd1-91296ba7232f"
+    },
+    "player_40": {
+      "__uuid__": "ad7607d9-c4b3-4c04-a70c-cccd9d07561a"
+    },
+    "player_41": {
+      "__uuid__": "75e4295a-9d59-4b75-b21e-d8c2620f9927"
+    },
+    "player_5": {
+      "__uuid__": "92fe0ad5-472c-47d3-8d99-7e054825a369"
+    },
+    "player_6": {
+      "__uuid__": "56c39dad-b731-4439-b9c5-b29ef0e0653e"
+    },
+    "player_7": {
+      "__uuid__": "1a6ce0b6-4b96-4dc5-a1da-1d0e42370e57"
+    },
+    "player_8": {
+      "__uuid__": "8cb962f3-fd97-449b-af45-369044060afe"
+    },
+    "player_9": {
+      "__uuid__": "de69033c-9a40-499a-bd4e-0f286b9a9739"
+    }
+  }
+}

@@ -1,9 +1,14 @@
+import Player from "./Player";
+
 const { ccclass, property } = cc._decorator;
 
 @ccclass
 export default class Platform extends cc.Component {
   @property({ type: cc.AudioClip })
   soundEffect: cc.AudioClip = null;
+
+  @property(Player)
+  player: Player = null;
 
   protected isTouched: boolean = false;
 
@@ -16,6 +21,12 @@ export default class Platform extends cc.Component {
   private moveSpeed: number = 100;
 
   private springVelocity: number = 320;
+
+  onLoad(){
+
+      cc.director.getPhysicsManager().enabled = true;
+          
+  }
 
   start() {
     this.anim = this.getComponent(cc.Animation);
@@ -56,6 +67,60 @@ export default class Platform extends cc.Component {
   // 1. In the physics lecture, we know that Cocos Creator
   //    provides four contact callbacks. You need to use callbacks to
   //    design different behaviors for different platforms.
+  
+    onBeginContact(contact, selfCollider, otherCollider)    {
+
+      if(otherCollider.node.name == "player")
+      {
+        // console.log(contact.getWorldManifold().normal.Vec2.)
+        if(this.isTouched==false){
+          cc.audioEngine.playEffect(this.soundEffect,false);
+          this.isTouched=true;
+
+          if(this.node.name=="Nails"){
+            otherCollider.node.getComponent("Player").playerDamage();
+          }
+          else {
+            otherCollider.node.getComponent("Player").playerRecover();
+          }
+        }
+        
+        if(this.node.name=="Fake"){
+
+          this.getAnimState();
+          this.playAnim();
+
+          this.schedule(function() {
+            contact.disabledonce = true;
+          }, 0.2);
+        }
+
+        else if(this.node.name=="Trampoline"){
+          this.isTouched=false;
+          this.getAnimState();
+          this.playAnim();
+          otherCollider.getComponent(cc.RigidBody).linearVelocity=cc.v2(0,this.springVelocity);
+        }
+      }
+    }
+
+    onPreSolve(contact, selfCollider, otherCollider){
+
+      if(otherCollider.node.name == "player")
+      {
+        if(this.node.name=="Conveyor"){
+          otherCollider.getComponent(cc.RigidBody).linearVelocity=cc.v2(this.moveSpeed,0);
+        }
+      }
+    }
+
+    
+    onEndContact(contact, selfCollider, otherCollider){
+      if(this.node.name=="Conveyor"){
+        otherCollider.getComponent(cc.RigidBody).linearVelocity=contact.moveSpeed;
+      }
+      // contact.enabled = true;
+    }
   //
   //    Hints: The callbacks are "onBeginContact", "onEndContact", "onPreSolve", "onPostSolve".
   //

@@ -31,6 +31,10 @@ export default class Player extends cc.Component
     private fallDown: boolean = false;
 
     private damageTime: number = 0;
+    onLoad()
+    {
+        cc.director.getPhysicsManager().enabled = true;            
+    }
 
     start () {
         this.idleFrame = this.getComponent(cc.Sprite).spriteFrame;

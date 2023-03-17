@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ceiling",
+    "texture": "b3be0661-853a-4610-afa3-c0eeb8fd4cab",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      384,
+      16
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      384,
+      16
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
